@@ -41,26 +41,26 @@ export default function UploadPage() {
       setError("Please select a file first.");
       return;
     }
-  
+
     setUploading(true);
     setSuccess(false);
     setProgress(0);
-  
+
     let current = 0;
-  
+
     const timer = setInterval(() => {
       current += 10;
       setProgress(current);
-  
+
       if (current >= 90) {
         clearInterval(timer);
       }
     }, 200);
-  
+
     try {
       const formData = new FormData();
       formData.append("file", file);
-  
+
       const response = await axios.post(
         "http://127.0.0.1:5000/upload",
         formData,
@@ -70,17 +70,21 @@ export default function UploadPage() {
           },
         }
       );
-  
+
       console.log("Backend response:", response.data);
-  
+
       setProgress(100);
       setUploading(false);
       setSuccess(true);
-  
+
+      // ✅ SAVE RESPONSE
+      localStorage.setItem("analysisData", JSON.stringify(response.data));
+
+
       setTimeout(() => {
         navigate("/dashboard");
       }, 800);
-  
+
     } catch (error) {
       console.error(error);
       setError("Upload failed. Please try again.");

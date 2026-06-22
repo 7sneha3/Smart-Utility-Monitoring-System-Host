@@ -14,10 +14,10 @@ export default function FAQ() {
       q: "What are the system requirements?",
       a: "Any modern browser (Chrome, Firefox, Edge) with a stable internet connection is enough. No external installation needed.",
     },
-    {
-      q: "Can I access the portal from mobile devices?",
-      a: "Yes, our portal is fully responsive and accessible from phones, tablets, and desktops.",
-    },
+    // {
+    //   q: "Can I access the portal from mobile devices?",
+    //   a: "Yes, our portal is fully responsive and accessible from phones, tablets, and desktops.",
+    // },
     {
       q: "Do I need any special sensors or hardware?",
       a: "No additional sensors or metering hardware are required. The system is designed to work entirely with manually collected or existing data exported to Excel.",
@@ -40,7 +40,7 @@ export default function FAQ() {
     },
     {
       q: "Can reports be exported for record-keeping or presentations?",
-      a: "Yes, all data, trend graphs, and summaries can be exported to common formats (including Excel and PDF) to facilitate reporting, compliance, or review",
+      a: "Yes summaries can be exported to common formats to facilitate reporting, compliance, or review",
     },
     {
       q: "Who receives the alerts and recommendations?",

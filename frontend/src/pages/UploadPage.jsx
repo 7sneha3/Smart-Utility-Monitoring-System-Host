@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Layout from "../components/Layout";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function UploadPage() {
   const navigate = useNavigate();
+  const fileInputRef = useRef(null);
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+  const [uploadResult, setUploadResult] = useState(null);
 
   const handleFileSelect = (e) => {
     const selected = e.target.files[0];
@@ -77,18 +80,44 @@ export default function UploadPage() {
       setUploading(false);
       setSuccess(true);
 
-      // ✅ SAVE RESPONSE
-      localStorage.setItem("analysisData", JSON.stringify(response.data));
+      toast.success(
+        `Upload Completed
+        Valid Rows: ${response.data.valid_rows}
+        Invalid Rows: ${response.data.invalid_rows}
+        Saved Records: ${response.data.records}`
+      );
 
+      setUploadResult(
+        response.data
+      );
 
       setTimeout(() => {
-        navigate("/dashboard");
+        navigate("/dashboard", {
+          state: {
+            refresh: true
+          }
+        });
       }, 800);
 
     } catch (error) {
       console.error(error);
-      setError("Upload failed. Please try again.");
+
+      setError(
+        error?.response?.data?.error ||
+        "Upload failed. Please try again."
+      );
+
       setUploading(false);
+
+      setFile(null);
+
+      setProgress(0);
+
+      setSuccess(false);
+
+      if (fileInputRef.current) {
+        fileInputRef.current.value = "";
+      }
     }
   };
 
@@ -200,6 +229,7 @@ export default function UploadPage() {
           <p className="text-gray-400 text-sm mt-1">Supported formats: .xlsx, .xls, .csv</p>
 
           <input
+            ref={fileInputRef}
             type="file"
             accept=".csv,.xls,.xlsx"
             onChange={handleFileSelect}
@@ -224,7 +254,13 @@ export default function UploadPage() {
               </p>
             </div>
             <button
-              onClick={() => setFile(null)}
+              onClick={() => {
+                setFile(null);
+
+                if (fileInputRef.current) {
+                  fileInputRef.current.value = "";
+                }
+              }}
               className="text-red-300 hover:text-red-400 text-sm"
             >
               ❌
@@ -246,10 +282,34 @@ export default function UploadPage() {
 
         {/* SUCCESS ALERT */}
         {success && (
-          <div className="mt-4 bg-green-500/20 text-green-300 border border-green-400/40 px-4 py-3 rounded-lg">
-            ✅ File uploaded & processed successfully!
+
+          <div
+            className="mt-4 bg-green-500/20 text-green-300 border
+border-green-400/40
+px-4
+py-3
+rounded-lg
+">✅ Upload Completed
+
+            <br />
+
+            Valid Rows :
+            {uploadResult?.valid_rows}
+
+            <br />
+
+            Invalid Rows :
+            {uploadResult?.invalid_rows}
+
+            <br />
+
+            Saved Records :
+            {uploadResult?.records}
+
           </div>
+
         )}
+        
 
         {/* UPLOAD BUTTON */}
         <button
@@ -265,12 +325,6 @@ export default function UploadPage() {
         </button>
       </div>
 
-
-
-
-
-
-
       {/* GUIDELINES CARD */}
       <div className="max-w-4xl mx-auto mt-10 bg-white/10 backdrop-blur-xl border border-white/30 rounded-2xl p-8 shadow-xl">
 
@@ -279,13 +333,12 @@ export default function UploadPage() {
         </h2>
 
         <ul className="text-gray-300 space-y-2">
-          <li>• Ensure timestamps are in ISO format (YYYY-MM-DD HH:MM:SS)</li>
+          <li>• Ensure timestamps are in ISO format (YYYY-MM-DD)</li>
           <li>• Energy values should be in kWh, water in Liters</li>
           <li>• Maximum file size: 10MB</li>
           <li>• Data will be automatically validated before storage</li>
         </ul>
       </div>
-
 
       {/* FOOTER */}
       {/* <footer className="text-center text-gray-400 text-sm mt-16 mb-6">

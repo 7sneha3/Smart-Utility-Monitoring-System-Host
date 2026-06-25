@@ -11,7 +11,7 @@ const AdminLogin = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "admin" && password === "admin") {
+    if (username === "loginAdmin" && password === "loginAdmin") {
       toast.success("Login successful!");
       navigate("/homepage");
     } else {
@@ -26,8 +26,6 @@ const AdminLogin = () => {
       style={{
         backgroundImage:
           "url('https://wallpapers.com/images/hd/industry-pictures-2000-x-985-hgko8zsjzitb76li.jpg')",
-
-
       }}
     >
       {/* Black Transparent Overlay */}

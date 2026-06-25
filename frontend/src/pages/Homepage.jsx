@@ -7,7 +7,13 @@ import { useNavigate } from "react-router-dom";
 export default function Homepage() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-
+  const downloadTemplate = () => {
+    window.open(
+      "http://localhost:5000/download-template",
+      "_blank"
+    );
+  };
+  
   // const handleFileUpload = async (event) => {
   //     const file = event.target.files[0];
 
@@ -298,13 +304,13 @@ export default function Homepage() {
               </p>
               <div className="flex justify-center mt-6">
                 <button className="px-6 py-2 
-    rounded-lg 
-    text-white 
-    bg-gradient-to-r from-green-400 to-blue-500 
-    transition-all duration-300
+                  rounded-lg 
+                  text-white 
+                  bg-gradient-to-r from-green-400 to-blue-500 
+                  transition-all duration-300
 
-    hover:opacity-80 
-    hover:text-black">
+                  hover:opacity-80 
+                  hover:text-black" onClick={downloadTemplate}>
                   Download Template
                 </button>
               </div>

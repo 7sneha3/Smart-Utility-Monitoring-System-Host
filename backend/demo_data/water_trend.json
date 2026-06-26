@@ -1,0 +1,1742 @@
+[
+    {
+        "date": "2024-01-01",
+        "consumption": 212605.63
+    },
+    {
+        "date": "2024-01-02",
+        "consumption": 272678.0
+    },
+    {
+        "date": "2024-01-03",
+        "consumption": 330405.79
+    },
+    {
+        "date": "2024-01-04",
+        "consumption": 233244.24
+    },
+    {
+        "date": "2024-01-05",
+        "consumption": 210894.94
+    },
+    {
+        "date": "2024-01-06",
+        "consumption": 256102.38
+    },
+    {
+        "date": "2024-01-07",
+        "consumption": 195142.06
+    },
+    {
+        "date": "2024-01-08",
+        "consumption": 262508.04
+    },
+    {
+        "date": "2024-01-09",
+        "consumption": 254596.25
+    },
+    {
+        "date": "2024-01-10",
+        "consumption": 239862.34
+    },
+    {
+        "date": "2024-01-11",
+        "consumption": 212339.83
+    },
+    {
+        "date": "2024-01-12",
+        "consumption": 252848.66
+    },
+    {
+        "date": "2024-01-13",
+        "consumption": 267438.9
+    },
+    {
+        "date": "2024-01-14",
+        "consumption": 325832.19
+    },
+    {
+        "date": "2024-01-15",
+        "consumption": 250704.81
+    },
+    {
+        "date": "2024-01-16",
+        "consumption": 156582.71
+    },
+    {
+        "date": "2024-01-17",
+        "consumption": 310781.87
+    },
+    {
+        "date": "2024-01-18",
+        "consumption": 217905.61
+    },
+    {
+        "date": "2024-01-19",
+        "consumption": 300568.73
+    },
+    {
+        "date": "2024-01-20",
+        "consumption": 233909.8
+    },
+    {
+        "date": "2024-01-21",
+        "consumption": 211246.29
+    },
+    {
+        "date": "2024-01-22",
+        "consumption": 216863.9
+    },
+    {
+        "date": "2024-01-23",
+        "consumption": 194754.6
+    },
+    {
+        "date": "2024-01-24",
+        "consumption": 280373.69
+    },
+    {
+        "date": "2024-01-25",
+        "consumption": 254323.01
+    },
+    {
+        "date": "2024-01-26",
+        "consumption": 288974.38
+    },
+    {
+        "date": "2024-01-27",
+        "consumption": 202408.06
+    },
+    {
+        "date": "2024-01-28",
+        "consumption": 237482.89
+    },
+    {
+        "date": "2024-01-29",
+        "consumption": 249185.92
+    },
+    {
+        "date": "2024-01-30",
+        "consumption": 254212.1
+    },
+    {
+        "date": "2024-01-31",
+        "consumption": 193365.88
+    },
+    {
+        "date": "2024-02-01",
+        "consumption": 199823.31
+    },
+    {
+        "date": "2024-02-02",
+        "consumption": 164607.68
+    },
+    {
+        "date": "2024-02-03",
+        "consumption": 306506.15
+    },
+    {
+        "date": "2024-02-04",
+        "consumption": 259095.35
+    },
+    {
+        "date": "2024-02-05",
+        "consumption": 263767.85
+    },
+    {
+        "date": "2024-02-06",
+        "consumption": 293717.62
+    },
+    {
+        "date": "2024-02-07",
+        "consumption": 316943.8
+    },
+    {
+        "date": "2024-02-08",
+        "consumption": 192912.45
+    },
+    {
+        "date": "2024-02-09",
+        "consumption": 299916.02
+    },
+    {
+        "date": "2024-02-10",
+        "consumption": 217336.64
+    },
+    {
+        "date": "2024-02-11",
+        "consumption": 251271.26
+    },
+    {
+        "date": "2024-02-12",
+        "consumption": 216272.3
+    },
+    {
+        "date": "2024-02-13",
+        "consumption": 223031.42
+    },
+    {
+        "date": "2024-02-14",
+        "consumption": 207480.74
+    },
+    {
+        "date": "2024-02-15",
+        "consumption": 214692.91
+    },
+    {
+        "date": "2024-02-16",
+        "consumption": 361221.0
+    },
+    {
+        "date": "2024-02-17",
+        "consumption": 209042.24
+    },
+    {
+        "date": "2024-02-18",
+        "consumption": 236018.23
+    },
+    {
+        "date": "2024-02-19",
+        "consumption": 308910.94
+    },
+    {
+        "date": "2024-02-20",
+        "consumption": 258026.4
+    },
+    {
+        "date": "2024-02-21",
+        "consumption": 213912.49
+    },
+    {
+        "date": "2024-02-22",
+        "consumption": 205190.19
+    },
+    {
+        "date": "2024-02-23",
+        "consumption": 257632.48
+    },
+    {
+        "date": "2024-02-24",
+        "consumption": 292709.82
+    },
+    {
+        "date": "2024-02-25",
+        "consumption": 258010.11
+    },
+    {
+        "date": "2024-02-26",
+        "consumption": 262881.77
+    },
+    {
+        "date": "2024-02-27",
+        "consumption": 257913.89
+    },
+    {
+        "date": "2024-02-28",
+        "consumption": 287164.61
+    },
+    {
+        "date": "2024-02-29",
+        "consumption": 280696.24
+    },
+    {
+        "date": "2024-03-01",
+        "consumption": 255810.08
+    },
+    {
+        "date": "2024-03-02",
+        "consumption": 216396.84
+    },
+    {
+        "date": "2024-03-03",
+        "consumption": 277386.61
+    },
+    {
+        "date": "2024-03-04",
+        "consumption": 274356.43
+    },
+    {
+        "date": "2024-03-05",
+        "consumption": 340231.9
+    },
+    {
+        "date": "2024-03-06",
+        "consumption": 249392.55
+    },
+    {
+        "date": "2024-03-07",
+        "consumption": 311225.17
+    },
+    {
+        "date": "2024-03-08",
+        "consumption": 250633.67
+    },
+    {
+        "date": "2024-03-09",
+        "consumption": 236759.8
+    },
+    {
+        "date": "2024-03-10",
+        "consumption": 239440.49
+    },
+    {
+        "date": "2024-03-11",
+        "consumption": 214231.82
+    },
+    {
+        "date": "2024-03-12",
+        "consumption": 322484.68
+    },
+    {
+        "date": "2024-03-13",
+        "consumption": 263993.39
+    },
+    {
+        "date": "2024-03-14",
+        "consumption": 259504.17
+    },
+    {
+        "date": "2024-03-15",
+        "consumption": 343641.24
+    },
+    {
+        "date": "2024-03-16",
+        "consumption": 268458.57
+    },
+    {
+        "date": "2024-03-17",
+        "consumption": 168236.8
+    },
+    {
+        "date": "2024-03-18",
+        "consumption": 236296.79
+    },
+    {
+        "date": "2024-03-19",
+        "consumption": 244572.74
+    },
+    {
+        "date": "2024-03-20",
+        "consumption": 259301.01
+    },
+    {
+        "date": "2024-03-21",
+        "consumption": 201631.85
+    },
+    {
+        "date": "2024-03-22",
+        "consumption": 282421.72
+    },
+    {
+        "date": "2024-03-23",
+        "consumption": 205223.51
+    },
+    {
+        "date": "2024-03-24",
+        "consumption": 189104.39
+    },
+    {
+        "date": "2024-03-25",
+        "consumption": 384498.33
+    },
+    {
+        "date": "2024-03-26",
+        "consumption": 209145.22
+    },
+    {
+        "date": "2024-03-27",
+        "consumption": 223064.84
+    },
+    {
+        "date": "2024-03-28",
+        "consumption": 262016.86
+    },
+    {
+        "date": "2024-03-29",
+        "consumption": 205837.19
+    },
+    {
+        "date": "2024-03-30",
+        "consumption": 233092.49
+    },
+    {
+        "date": "2024-03-31",
+        "consumption": 321788.9
+    },
+    {
+        "date": "2024-04-01",
+        "consumption": 370787.89
+    },
+    {
+        "date": "2024-04-02",
+        "consumption": 334336.79
+    },
+    {
+        "date": "2024-04-03",
+        "consumption": 272808.7
+    },
+    {
+        "date": "2024-04-04",
+        "consumption": 296355.48
+    },
+    {
+        "date": "2024-04-05",
+        "consumption": 334194.17
+    },
+    {
+        "date": "2024-04-06",
+        "consumption": 364159.53
+    },
+    {
+        "date": "2024-04-07",
+        "consumption": 352224.24
+    },
+    {
+        "date": "2024-04-08",
+        "consumption": 307336.7
+    },
+    {
+        "date": "2024-04-09",
+        "consumption": 341182.76
+    },
+    {
+        "date": "2024-04-10",
+        "consumption": 326204.05
+    },
+    {
+        "date": "2024-04-11",
+        "consumption": 429858.6
+    },
+    {
+        "date": "2024-04-12",
+        "consumption": 312635.43
+    },
+    {
+        "date": "2024-04-13",
+        "consumption": 265366.69
+    },
+    {
+        "date": "2024-04-14",
+        "consumption": 275082.17
+    },
+    {
+        "date": "2024-04-15",
+        "consumption": 308358.05
+    },
+    {
+        "date": "2024-04-16",
+        "consumption": 298301.28
+    },
+    {
+        "date": "2024-04-17",
+        "consumption": 302630.57
+    },
+    {
+        "date": "2024-04-18",
+        "consumption": 324307.01
+    },
+    {
+        "date": "2024-04-19",
+        "consumption": 270469.37
+    },
+    {
+        "date": "2024-04-20",
+        "consumption": 154964.19
+    },
+    {
+        "date": "2024-04-21",
+        "consumption": 271347.68
+    },
+    {
+        "date": "2024-04-22",
+        "consumption": 251224.08
+    },
+    {
+        "date": "2024-04-23",
+        "consumption": 279847.87
+    },
+    {
+        "date": "2024-04-24",
+        "consumption": 295915.4
+    },
+    {
+        "date": "2024-04-25",
+        "consumption": 257469.23
+    },
+    {
+        "date": "2024-04-26",
+        "consumption": 296881.68
+    },
+    {
+        "date": "2024-04-27",
+        "consumption": 332844.61
+    },
+    {
+        "date": "2024-04-28",
+        "consumption": 225299.62
+    },
+    {
+        "date": "2024-04-29",
+        "consumption": 181970.27
+    },
+    {
+        "date": "2024-04-30",
+        "consumption": 369049.77
+    },
+    {
+        "date": "2024-05-01",
+        "consumption": 376559.27
+    },
+    {
+        "date": "2024-05-02",
+        "consumption": 223834.81
+    },
+    {
+        "date": "2024-05-03",
+        "consumption": 196791.47
+    },
+    {
+        "date": "2024-05-04",
+        "consumption": 313098.64
+    },
+    {
+        "date": "2024-05-05",
+        "consumption": 259360.93
+    },
+    {
+        "date": "2024-05-06",
+        "consumption": 360658.96
+    },
+    {
+        "date": "2024-05-07",
+        "consumption": 300471.95
+    },
+    {
+        "date": "2024-05-08",
+        "consumption": 310580.46
+    },
+    {
+        "date": "2024-05-09",
+        "consumption": 331138.9
+    },
+    {
+        "date": "2024-05-10",
+        "consumption": 259236.53
+    },
+    {
+        "date": "2024-05-11",
+        "consumption": 269595.01
+    },
+    {
+        "date": "2024-05-12",
+        "consumption": 292281.78
+    },
+    {
+        "date": "2024-05-13",
+        "consumption": 381826.98
+    },
+    {
+        "date": "2024-05-14",
+        "consumption": 328964.86
+    },
+    {
+        "date": "2024-05-15",
+        "consumption": 345402.61
+    },
+    {
+        "date": "2024-05-16",
+        "consumption": 281608.97
+    },
+    {
+        "date": "2024-05-17",
+        "consumption": 331505.07
+    },
+    {
+        "date": "2024-05-18",
+        "consumption": 334826.63
+    },
+    {
+        "date": "2024-05-19",
+        "consumption": 261703.11
+    },
+    {
+        "date": "2024-05-20",
+        "consumption": 339325.88
+    },
+    {
+        "date": "2024-05-21",
+        "consumption": 356552.09
+    },
+    {
+        "date": "2024-05-22",
+        "consumption": 335580.79
+    },
+    {
+        "date": "2024-05-23",
+        "consumption": 328323.67
+    },
+    {
+        "date": "2024-05-24",
+        "consumption": 329248.87
+    },
+    {
+        "date": "2024-05-25",
+        "consumption": 295132.05
+    },
+    {
+        "date": "2024-05-26",
+        "consumption": 314669.28
+    },
+    {
+        "date": "2024-05-27",
+        "consumption": 234805.33
+    },
+    {
+        "date": "2024-05-28",
+        "consumption": 320153.91
+    },
+    {
+        "date": "2024-05-29",
+        "consumption": 319387.07
+    },
+    {
+        "date": "2024-05-30",
+        "consumption": 384453.98
+    },
+    {
+        "date": "2024-05-31",
+        "consumption": 328168.14
+    },
+    {
+        "date": "2024-06-01",
+        "consumption": 305517.22
+    },
+    {
+        "date": "2024-06-02",
+        "consumption": 317777.0
+    },
+    {
+        "date": "2024-06-03",
+        "consumption": 226384.3
+    },
+    {
+        "date": "2024-06-04",
+        "consumption": 339664.21
+    },
+    {
+        "date": "2024-06-05",
+        "consumption": 278431.42
+    },
+    {
+        "date": "2024-06-06",
+        "consumption": 330347.62
+    },
+    {
+        "date": "2024-06-07",
+        "consumption": 295635.02
+    },
+    {
+        "date": "2024-06-08",
+        "consumption": 254307.0
+    },
+    {
+        "date": "2024-06-09",
+        "consumption": 227279.53
+    },
+    {
+        "date": "2024-06-10",
+        "consumption": 220034.63
+    },
+    {
+        "date": "2024-06-11",
+        "consumption": 368996.78
+    },
+    {
+        "date": "2024-06-12",
+        "consumption": 298164.18
+    },
+    {
+        "date": "2024-06-13",
+        "consumption": 265644.49
+    },
+    {
+        "date": "2024-06-14",
+        "consumption": 288893.62
+    },
+    {
+        "date": "2024-06-15",
+        "consumption": 384279.64
+    },
+    {
+        "date": "2024-06-16",
+        "consumption": 319570.46
+    },
+    {
+        "date": "2024-06-17",
+        "consumption": 283427.31
+    },
+    {
+        "date": "2024-06-18",
+        "consumption": 337164.04
+    },
+    {
+        "date": "2024-06-19",
+        "consumption": 416216.55
+    },
+    {
+        "date": "2024-06-20",
+        "consumption": 380135.96
+    },
+    {
+        "date": "2024-06-21",
+        "consumption": 398242.02
+    },
+    {
+        "date": "2024-06-22",
+        "consumption": 390039.14
+    },
+    {
+        "date": "2024-06-23",
+        "consumption": 353297.31
+    },
+    {
+        "date": "2024-06-24",
+        "consumption": 316587.36
+    },
+    {
+        "date": "2024-06-25",
+        "consumption": 244309.81
+    },
+    {
+        "date": "2024-06-26",
+        "consumption": 387594.67
+    },
+    {
+        "date": "2024-06-27",
+        "consumption": 316180.85
+    },
+    {
+        "date": "2024-06-28",
+        "consumption": 304062.16
+    },
+    {
+        "date": "2024-06-29",
+        "consumption": 309707.01
+    },
+    {
+        "date": "2024-06-30",
+        "consumption": 265654.39
+    },
+    {
+        "date": "2024-07-01",
+        "consumption": 338088.35
+    },
+    {
+        "date": "2024-07-02",
+        "consumption": 264333.05
+    },
+    {
+        "date": "2024-07-03",
+        "consumption": 288087.45
+    },
+    {
+        "date": "2024-07-04",
+        "consumption": 333701.09
+    },
+    {
+        "date": "2024-07-05",
+        "consumption": 326679.66
+    },
+    {
+        "date": "2024-07-06",
+        "consumption": 182495.92
+    },
+    {
+        "date": "2024-07-07",
+        "consumption": 332334.14
+    },
+    {
+        "date": "2024-07-08",
+        "consumption": 315831.72
+    },
+    {
+        "date": "2024-07-09",
+        "consumption": 290875.09
+    },
+    {
+        "date": "2024-07-10",
+        "consumption": 373243.87
+    },
+    {
+        "date": "2024-07-11",
+        "consumption": 458063.8
+    },
+    {
+        "date": "2024-07-12",
+        "consumption": 305252.3
+    },
+    {
+        "date": "2024-07-13",
+        "consumption": 308321.02
+    },
+    {
+        "date": "2024-07-14",
+        "consumption": 300149.17
+    },
+    {
+        "date": "2024-07-15",
+        "consumption": 276567.23
+    },
+    {
+        "date": "2024-07-16",
+        "consumption": 291553.52
+    },
+    {
+        "date": "2024-07-17",
+        "consumption": 302539.83
+    },
+    {
+        "date": "2024-07-18",
+        "consumption": 415365.49
+    },
+    {
+        "date": "2024-07-19",
+        "consumption": 291928.36
+    },
+    {
+        "date": "2024-07-20",
+        "consumption": 228615.95
+    },
+    {
+        "date": "2024-07-21",
+        "consumption": 272934.59
+    },
+    {
+        "date": "2024-07-22",
+        "consumption": 341091.96
+    },
+    {
+        "date": "2024-07-23",
+        "consumption": 330301.59
+    },
+    {
+        "date": "2024-07-24",
+        "consumption": 276638.69
+    },
+    {
+        "date": "2024-07-25",
+        "consumption": 274081.52
+    },
+    {
+        "date": "2024-07-26",
+        "consumption": 287459.49
+    },
+    {
+        "date": "2024-07-27",
+        "consumption": 350366.5
+    },
+    {
+        "date": "2024-07-28",
+        "consumption": 378326.54
+    },
+    {
+        "date": "2024-07-29",
+        "consumption": 280741.87
+    },
+    {
+        "date": "2024-07-30",
+        "consumption": 400770.29
+    },
+    {
+        "date": "2024-07-31",
+        "consumption": 295789.93
+    },
+    {
+        "date": "2024-08-01",
+        "consumption": 299981.67
+    },
+    {
+        "date": "2024-08-02",
+        "consumption": 372822.12
+    },
+    {
+        "date": "2024-08-03",
+        "consumption": 292832.48
+    },
+    {
+        "date": "2024-08-04",
+        "consumption": 265725.03
+    },
+    {
+        "date": "2024-08-05",
+        "consumption": 233004.54
+    },
+    {
+        "date": "2024-08-06",
+        "consumption": 331202.69
+    },
+    {
+        "date": "2024-08-07",
+        "consumption": 345776.69
+    },
+    {
+        "date": "2024-08-08",
+        "consumption": 371909.35
+    },
+    {
+        "date": "2024-08-09",
+        "consumption": 270854.68
+    },
+    {
+        "date": "2024-08-10",
+        "consumption": 350152.26
+    },
+    {
+        "date": "2024-08-11",
+        "consumption": 357518.13
+    },
+    {
+        "date": "2024-08-12",
+        "consumption": 269560.11
+    },
+    {
+        "date": "2024-08-13",
+        "consumption": 355125.9
+    },
+    {
+        "date": "2024-08-14",
+        "consumption": 372172.6
+    },
+    {
+        "date": "2024-08-15",
+        "consumption": 408741.43
+    },
+    {
+        "date": "2024-08-16",
+        "consumption": 300805.3
+    },
+    {
+        "date": "2024-08-17",
+        "consumption": 325052.99
+    },
+    {
+        "date": "2024-08-18",
+        "consumption": 338307.03
+    },
+    {
+        "date": "2024-08-19",
+        "consumption": 224742.6
+    },
+    {
+        "date": "2024-08-20",
+        "consumption": 376968.22
+    },
+    {
+        "date": "2024-08-21",
+        "consumption": 399990.74
+    },
+    {
+        "date": "2024-08-22",
+        "consumption": 377307.54
+    },
+    {
+        "date": "2024-08-23",
+        "consumption": 168380.46
+    },
+    {
+        "date": "2024-08-24",
+        "consumption": 213562.78
+    },
+    {
+        "date": "2024-08-25",
+        "consumption": 330421.88
+    },
+    {
+        "date": "2024-08-26",
+        "consumption": 412722.01
+    },
+    {
+        "date": "2024-08-27",
+        "consumption": 326512.05
+    },
+    {
+        "date": "2024-08-28",
+        "consumption": 191632.78
+    },
+    {
+        "date": "2024-08-29",
+        "consumption": 308603.58
+    },
+    {
+        "date": "2024-08-30",
+        "consumption": 320703.42
+    },
+    {
+        "date": "2024-08-31",
+        "consumption": 309596.04
+    },
+    {
+        "date": "2024-09-01",
+        "consumption": 296561.26
+    },
+    {
+        "date": "2024-09-02",
+        "consumption": 356427.36
+    },
+    {
+        "date": "2024-09-03",
+        "consumption": 255529.34
+    },
+    {
+        "date": "2024-09-04",
+        "consumption": 290859.71
+    },
+    {
+        "date": "2024-09-05",
+        "consumption": 330637.14
+    },
+    {
+        "date": "2024-09-06",
+        "consumption": 333576.58
+    },
+    {
+        "date": "2024-09-07",
+        "consumption": 351354.38
+    },
+    {
+        "date": "2024-09-08",
+        "consumption": 245975.2
+    },
+    {
+        "date": "2024-09-09",
+        "consumption": 223491.56
+    },
+    {
+        "date": "2024-09-10",
+        "consumption": 339681.41
+    },
+    {
+        "date": "2024-09-11",
+        "consumption": 282557.62
+    },
+    {
+        "date": "2024-09-12",
+        "consumption": 240609.48
+    },
+    {
+        "date": "2024-09-13",
+        "consumption": 299454.8
+    },
+    {
+        "date": "2024-09-14",
+        "consumption": 286924.38
+    },
+    {
+        "date": "2024-09-15",
+        "consumption": 374951.94
+    },
+    {
+        "date": "2024-09-16",
+        "consumption": 277226.51
+    },
+    {
+        "date": "2024-09-17",
+        "consumption": 322468.67
+    },
+    {
+        "date": "2024-09-18",
+        "consumption": 236333.97
+    },
+    {
+        "date": "2024-09-19",
+        "consumption": 315877.57
+    },
+    {
+        "date": "2024-09-20",
+        "consumption": 305270.85
+    },
+    {
+        "date": "2024-09-21",
+        "consumption": 225498.47
+    },
+    {
+        "date": "2024-09-22",
+        "consumption": 187373.44
+    },
+    {
+        "date": "2024-09-23",
+        "consumption": 343310.57
+    },
+    {
+        "date": "2024-09-24",
+        "consumption": 314075.61
+    },
+    {
+        "date": "2024-09-25",
+        "consumption": 321972.5
+    },
+    {
+        "date": "2024-09-26",
+        "consumption": 225306.15
+    },
+    {
+        "date": "2024-09-27",
+        "consumption": 325177.49
+    },
+    {
+        "date": "2024-09-28",
+        "consumption": 280323.05
+    },
+    {
+        "date": "2024-09-29",
+        "consumption": 213017.45
+    },
+    {
+        "date": "2024-09-30",
+        "consumption": 336495.14
+    },
+    {
+        "date": "2024-10-01",
+        "consumption": 228053.1
+    },
+    {
+        "date": "2024-10-02",
+        "consumption": 209239.34
+    },
+    {
+        "date": "2024-10-03",
+        "consumption": 187030.08
+    },
+    {
+        "date": "2024-10-04",
+        "consumption": 268188.87
+    },
+    {
+        "date": "2024-10-05",
+        "consumption": 207535.19
+    },
+    {
+        "date": "2024-10-06",
+        "consumption": 282680.16
+    },
+    {
+        "date": "2024-10-07",
+        "consumption": 267971.18
+    },
+    {
+        "date": "2024-10-08",
+        "consumption": 272464.88
+    },
+    {
+        "date": "2024-10-09",
+        "consumption": 287372.81
+    },
+    {
+        "date": "2024-10-10",
+        "consumption": 315721.0
+    },
+    {
+        "date": "2024-10-11",
+        "consumption": 254091.94
+    },
+    {
+        "date": "2024-10-12",
+        "consumption": 208959.28
+    },
+    {
+        "date": "2024-10-13",
+        "consumption": 227924.7
+    },
+    {
+        "date": "2024-10-14",
+        "consumption": 251654.33
+    },
+    {
+        "date": "2024-10-15",
+        "consumption": 256513.22
+    },
+    {
+        "date": "2024-10-16",
+        "consumption": 232094.44
+    },
+    {
+        "date": "2024-10-17",
+        "consumption": 268838.48
+    },
+    {
+        "date": "2024-10-18",
+        "consumption": 322155.91
+    },
+    {
+        "date": "2024-10-19",
+        "consumption": 300358.14
+    },
+    {
+        "date": "2024-10-20",
+        "consumption": 222077.32
+    },
+    {
+        "date": "2024-10-21",
+        "consumption": 207990.81
+    },
+    {
+        "date": "2024-10-22",
+        "consumption": 179001.88
+    },
+    {
+        "date": "2024-10-23",
+        "consumption": 291546.7
+    },
+    {
+        "date": "2024-10-24",
+        "consumption": 232986.03
+    },
+    {
+        "date": "2024-10-25",
+        "consumption": 232455.35
+    },
+    {
+        "date": "2024-10-26",
+        "consumption": 203576.17
+    },
+    {
+        "date": "2024-10-27",
+        "consumption": 301230.1
+    },
+    {
+        "date": "2024-10-28",
+        "consumption": 258872.02
+    },
+    {
+        "date": "2024-10-29",
+        "consumption": 242181.25
+    },
+    {
+        "date": "2024-10-30",
+        "consumption": 234100.0
+    },
+    {
+        "date": "2024-10-31",
+        "consumption": 302655.47
+    },
+    {
+        "date": "2024-11-01",
+        "consumption": 217496.66
+    },
+    {
+        "date": "2024-11-02",
+        "consumption": 243846.09
+    },
+    {
+        "date": "2024-11-03",
+        "consumption": 349524.63
+    },
+    {
+        "date": "2024-11-04",
+        "consumption": 159233.64
+    },
+    {
+        "date": "2024-11-05",
+        "consumption": 247545.99
+    },
+    {
+        "date": "2024-11-06",
+        "consumption": 231050.7
+    },
+    {
+        "date": "2024-11-07",
+        "consumption": 296817.92
+    },
+    {
+        "date": "2024-11-08",
+        "consumption": 326774.97
+    },
+    {
+        "date": "2024-11-09",
+        "consumption": 278633.73
+    },
+    {
+        "date": "2024-11-10",
+        "consumption": 243187.21
+    },
+    {
+        "date": "2024-11-11",
+        "consumption": 228732.89
+    },
+    {
+        "date": "2024-11-12",
+        "consumption": 224888.8
+    },
+    {
+        "date": "2024-11-13",
+        "consumption": 295803.91
+    },
+    {
+        "date": "2024-11-14",
+        "consumption": 240230.8
+    },
+    {
+        "date": "2024-11-15",
+        "consumption": 219718.69
+    },
+    {
+        "date": "2024-11-16",
+        "consumption": 178845.88
+    },
+    {
+        "date": "2024-11-17",
+        "consumption": 240215.64
+    },
+    {
+        "date": "2024-11-18",
+        "consumption": 331637.25
+    },
+    {
+        "date": "2024-11-19",
+        "consumption": 163734.23
+    },
+    {
+        "date": "2024-11-20",
+        "consumption": 217374.79
+    },
+    {
+        "date": "2024-11-21",
+        "consumption": 211195.76
+    },
+    {
+        "date": "2024-11-22",
+        "consumption": 298035.14
+    },
+    {
+        "date": "2024-11-23",
+        "consumption": 244058.1
+    },
+    {
+        "date": "2024-11-24",
+        "consumption": 231660.4
+    },
+    {
+        "date": "2024-11-25",
+        "consumption": 339012.25
+    },
+    {
+        "date": "2024-11-26",
+        "consumption": 189387.3
+    },
+    {
+        "date": "2024-11-27",
+        "consumption": 223169.07
+    },
+    {
+        "date": "2024-11-28",
+        "consumption": 192860.46
+    },
+    {
+        "date": "2024-11-29",
+        "consumption": 251357.34
+    },
+    {
+        "date": "2024-11-30",
+        "consumption": 222679.34
+    },
+    {
+        "date": "2024-12-01",
+        "consumption": 263618.12
+    },
+    {
+        "date": "2024-12-02",
+        "consumption": 243922.08
+    },
+    {
+        "date": "2024-12-03",
+        "consumption": 213700.67
+    },
+    {
+        "date": "2024-12-04",
+        "consumption": 295878.4
+    },
+    {
+        "date": "2024-12-05",
+        "consumption": 240635.51
+    },
+    {
+        "date": "2024-12-06",
+        "consumption": 282582.63
+    },
+    {
+        "date": "2024-12-07",
+        "consumption": 357992.32
+    },
+    {
+        "date": "2024-12-08",
+        "consumption": 279686.7
+    },
+    {
+        "date": "2024-12-09",
+        "consumption": 214811.67
+    },
+    {
+        "date": "2024-12-10",
+        "consumption": 295422.69
+    },
+    {
+        "date": "2024-12-11",
+        "consumption": 212209.35
+    },
+    {
+        "date": "2024-12-12",
+        "consumption": 260119.18
+    },
+    {
+        "date": "2024-12-13",
+        "consumption": 295859.81
+    },
+    {
+        "date": "2024-12-14",
+        "consumption": 192882.46
+    },
+    {
+        "date": "2024-12-15",
+        "consumption": 186882.69
+    },
+    {
+        "date": "2024-12-16",
+        "consumption": 267021.3
+    },
+    {
+        "date": "2024-12-17",
+        "consumption": 216411.12
+    },
+    {
+        "date": "2024-12-18",
+        "consumption": 232340.17
+    },
+    {
+        "date": "2024-12-19",
+        "consumption": 305208.95
+    },
+    {
+        "date": "2024-12-20",
+        "consumption": 262389.03
+    },
+    {
+        "date": "2024-12-21",
+        "consumption": 229237.99
+    },
+    {
+        "date": "2024-12-22",
+        "consumption": 244862.37
+    },
+    {
+        "date": "2024-12-23",
+        "consumption": 191997.41
+    },
+    {
+        "date": "2024-12-24",
+        "consumption": 216573.14
+    },
+    {
+        "date": "2024-12-25",
+        "consumption": 247254.58
+    },
+    {
+        "date": "2024-12-26",
+        "consumption": 191699.36
+    },
+    {
+        "date": "2024-12-27",
+        "consumption": 266880.51
+    },
+    {
+        "date": "2024-12-28",
+        "consumption": 253130.72
+    },
+    {
+        "date": "2024-12-29",
+        "consumption": 201715.08
+    },
+    {
+        "date": "2024-12-30",
+        "consumption": 344880.91
+    },
+    {
+        "date": "2024-12-31",
+        "consumption": 244757.02
+    },
+    {
+        "date": "2025-01-01",
+        "consumption": 296621.69
+    },
+    {
+        "date": "2025-01-02",
+        "consumption": 242766.83
+    },
+    {
+        "date": "2025-01-03",
+        "consumption": 165573.45
+    },
+    {
+        "date": "2025-01-04",
+        "consumption": 248579.5
+    },
+    {
+        "date": "2025-01-05",
+        "consumption": 295401.09
+    },
+    {
+        "date": "2025-01-06",
+        "consumption": 236294.51
+    },
+    {
+        "date": "2025-01-07",
+        "consumption": 208653.49
+    },
+    {
+        "date": "2025-01-08",
+        "consumption": 268807.6
+    },
+    {
+        "date": "2025-01-09",
+        "consumption": 305897.22
+    },
+    {
+        "date": "2025-01-10",
+        "consumption": 309824.57
+    },
+    {
+        "date": "2025-01-11",
+        "consumption": 220264.53
+    },
+    {
+        "date": "2025-01-12",
+        "consumption": 229836.28
+    },
+    {
+        "date": "2025-01-13",
+        "consumption": 277950.42
+    },
+    {
+        "date": "2025-01-14",
+        "consumption": 127576.82
+    },
+    {
+        "date": "2025-01-15",
+        "consumption": 211176.06
+    },
+    {
+        "date": "2025-01-16",
+        "consumption": 259633.57
+    },
+    {
+        "date": "2025-01-17",
+        "consumption": 246230.63
+    },
+    {
+        "date": "2025-01-18",
+        "consumption": 196779.61
+    },
+    {
+        "date": "2025-01-19",
+        "consumption": 222445.14
+    },
+    {
+        "date": "2025-01-20",
+        "consumption": 231163.46
+    },
+    {
+        "date": "2025-01-21",
+        "consumption": 254497.85
+    },
+    {
+        "date": "2025-01-22",
+        "consumption": 263162.05
+    },
+    {
+        "date": "2025-01-23",
+        "consumption": 210983.55
+    },
+    {
+        "date": "2025-01-24",
+        "consumption": 266641.8
+    },
+    {
+        "date": "2025-01-25",
+        "consumption": 308214.39
+    },
+    {
+        "date": "2025-01-26",
+        "consumption": 237170.25
+    },
+    {
+        "date": "2025-01-27",
+        "consumption": 217739.69
+    },
+    {
+        "date": "2025-01-28",
+        "consumption": 245931.47
+    },
+    {
+        "date": "2025-01-29",
+        "consumption": 208390.78
+    },
+    {
+        "date": "2025-01-30",
+        "consumption": 170699.85
+    },
+    {
+        "date": "2025-01-31",
+        "consumption": 234813.43
+    },
+    {
+        "date": "2025-02-01",
+        "consumption": 146477.68
+    },
+    {
+        "date": "2025-02-02",
+        "consumption": 292829.01
+    },
+    {
+        "date": "2025-02-03",
+        "consumption": 163424.47
+    },
+    {
+        "date": "2025-02-04",
+        "consumption": 198815.6
+    },
+    {
+        "date": "2025-02-05",
+        "consumption": 324038.11
+    },
+    {
+        "date": "2025-02-06",
+        "consumption": 323215.39
+    },
+    {
+        "date": "2025-02-07",
+        "consumption": 168423.87
+    },
+    {
+        "date": "2025-02-08",
+        "consumption": 230067.89
+    },
+    {
+        "date": "2025-02-09",
+        "consumption": 242999.5
+    },
+    {
+        "date": "2025-02-10",
+        "consumption": 319966.53
+    },
+    {
+        "date": "2025-02-11",
+        "consumption": 315155.32
+    },
+    {
+        "date": "2025-02-12",
+        "consumption": 269304.62
+    },
+    {
+        "date": "2025-02-13",
+        "consumption": 246170.87
+    },
+    {
+        "date": "2025-02-14",
+        "consumption": 199502.82
+    },
+    {
+        "date": "2025-02-15",
+        "consumption": 323602.82
+    },
+    {
+        "date": "2025-02-16",
+        "consumption": 225886.34
+    },
+    {
+        "date": "2025-02-17",
+        "consumption": 261048.9
+    },
+    {
+        "date": "2025-02-18",
+        "consumption": 212533.43
+    },
+    {
+        "date": "2025-02-19",
+        "consumption": 249459.51
+    },
+    {
+        "date": "2025-02-20",
+        "consumption": 193496.58
+    },
+    {
+        "date": "2025-02-21",
+        "consumption": 236166.9
+    },
+    {
+        "date": "2025-02-22",
+        "consumption": 234082.38
+    },
+    {
+        "date": "2025-02-23",
+        "consumption": 306806.13
+    },
+    {
+        "date": "2025-02-24",
+        "consumption": 311651.55
+    },
+    {
+        "date": "2025-02-25",
+        "consumption": 261904.63
+    },
+    {
+        "date": "2025-02-26",
+        "consumption": 220875.02
+    },
+    {
+        "date": "2025-02-27",
+        "consumption": 259170.84
+    },
+    {
+        "date": "2025-02-28",
+        "consumption": 274240.52
+    },
+    {
+        "date": "2025-03-01",
+        "consumption": 249183.45
+    },
+    {
+        "date": "2025-03-02",
+        "consumption": 298376.92
+    },
+    {
+        "date": "2025-03-03",
+        "consumption": 200788.31
+    },
+    {
+        "date": "2025-03-04",
+        "consumption": 184430.93
+    },
+    {
+        "date": "2025-03-05",
+        "consumption": 245678.0
+    },
+    {
+        "date": "2025-03-06",
+        "consumption": 255333.68
+    },
+    {
+        "date": "2025-03-07",
+        "consumption": 221286.2
+    },
+    {
+        "date": "2025-03-08",
+        "consumption": 363728.57
+    },
+    {
+        "date": "2025-03-09",
+        "consumption": 278541.6
+    },
+    {
+        "date": "2025-03-10",
+        "consumption": 216973.44
+    }
+]

@@ -20,7 +20,6 @@ app.register_blueprint(template_bp)
 app.register_blueprint(manual_entry_bp)
 app.register_blueprint(report_bp)
 app.register_blueprint(forecast_bp)
-# app.register_blueprint(utility_bp)    utility directly added from frontend
 
 @app.route("/")
 def home():

@@ -88,60 +88,24 @@ def get_summary(resource_type=None, sub_utility=None):
             len(daily_data)
     }
 
-def get_consumption_trend(resource_type=None, sub_utility=None):
+import json
+import os
 
-    query = {}
+def get_consumption_trend(resource_type, sub_utility=None):
 
-    if resource_type:
-        query["resource_type"] = resource_type
+    if resource_type == "energy":
+        filename = "energy_trend.json"
+    else:
+        filename = "water_trend.json"
 
-    if sub_utility:
-        query["sub_utility"] = sub_utility
-
-    utility_collection.find(query)
-
-    pipeline = [
-        {
-            "$match": query
-        },
-        {
-            "$group": {
-                "_id": "$date",
-                "consumption": {
-                    "$sum": "$consumption"
-                }
-            }
-        },
-        {
-            "$sort": {
-                "_id": 1
-            }
-        }
-    ]
-
-    results = list(
-        utility_collection.aggregate(
-            pipeline
-        )
+    path = os.path.join(
+        "demo_data",
+        filename
     )
 
-    trend_data = []
-
-    for item in results:
-
-        trend_data.append({
-            "date": item["_id"],
-            "consumption": round(
-                item["consumption"],
-                2
-            )
-        })
-
-    print("TREND RECORDS =", len(trend_data))
-    print(trend_data[:5])
-
-    return trend_data
-
+    with open(path, "r") as f:
+        return json.load(f)
+    
 def get_anomalies(resource_type=None, sub_utility=None):
 
     query = {}

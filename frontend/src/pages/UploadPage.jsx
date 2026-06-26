@@ -121,29 +121,15 @@ export default function UploadPage() {
     }
   };
 
+  const startDemo = () => {
+    navigate("/dashboard");
+};
+
   const removeFile = () => {
     setFile(null);
     setProgress(0);
     setSuccess(false);
   };
-
-  // const startUpload = () => {
-  //   setUploading(true);
-  //   setSuccess(false);
-
-  //   // Simulated upload progression
-  //   let current = 0;
-  //   const timer = setInterval(() => {
-  //     current += 12;
-  //     setProgress(current);
-
-  //     if (current >= 100) {
-  //       clearInterval(timer);
-  //       setUploading(false);
-  //       setSuccess(true);
-  //     }
-  //   }, 200);
-  // };
 
   return (
     <div
@@ -228,13 +214,13 @@ export default function UploadPage() {
 
           <p className="text-gray-400 text-sm mt-1">Supported formats: .xlsx, .xls, .csv</p>
 
-          <input
+          {/* <input
             ref={fileInputRef}
             type="file"
             accept=".csv,.xls,.xlsx"
             onChange={handleFileSelect}
             className="absolute inset-0 opacity-0 cursor-pointer"
-          />
+          /> */}
         </div>
 
         {/* ERROR ALERT */}
@@ -284,12 +270,12 @@ export default function UploadPage() {
         {success && (
 
           <div
-            className="mt-4 bg-green-500/20 text-green-300 border
-border-green-400/40
-px-4
-py-3
-rounded-lg
-">✅ Upload Completed
+              className="mt-4 bg-green-500/20 text-green-300 border
+              border-green-400/40
+              px-4
+              py-3
+              rounded-lg
+              ">✅ Upload Completed
 
             <br />
 
@@ -312,7 +298,7 @@ rounded-lg
         
 
         {/* UPLOAD BUTTON */}
-        <button
+        {/* <button
           disabled={!file || uploading}
           onClick={startUpload}
           className={`w-full mt-6 py-3 rounded-xl transition-all font-medium
@@ -322,7 +308,18 @@ rounded-lg
             }`}
         >
           {uploading ? "Processing..." : "Upload and Process"}
-        </button>
+        </button> */}
+        <button
+    onClick={startDemo}
+    className="w-full mt-4 py-3 rounded-xl
+               bg-gradient-to-r
+               from-indigo-500
+               to-cyan-500
+               text-white
+               font-semibold"
+>
+    View Demo Dashboard
+</button>
       </div>
 
       {/* GUIDELINES CARD */}

@@ -239,7 +239,7 @@ export default function ForecastChart({
                         <option value={30}>Next 30 Days</option>
                     </select>
 
-                    <div
+                    {/* <div
                         style={{
                             background: "rgba(34,197,94,0.10)",
                             border: "1px solid rgba(34,197,94,0.25)",
@@ -251,35 +251,39 @@ export default function ForecastChart({
                         }}
                     >
                        Confidence:{" "}{forecastData.confidence}
-                    </div>
+                    </div> */}
 
                     {/* for dynamic confidence, changes color */}
-                    {/* <div
-                style={{
-                    background:
-                    confidence === "High"
-                        ? "rgba(34,197,94,0.10)"
-                        : confidence === "Medium"
-                        ? "rgba(245,158,11,0.10)"
-                        : "rgba(239,68,68,0.10)",
+                    <div
+                        style={{
+                            background:
+                            forecastData.confidence === "High"
+                                ? "rgba(34,197,94,0.10)"
+                                : forecastData.confidence === "Medium"
+                                ? "rgba(245,158,11,0.10)"
+                                : "rgba(239,68,68,0.10)",
 
-                    border:
-                    confidence === "High"
-                        ? "1px solid rgba(34,197,94,0.25)"
-                        : confidence === "Medium"
-                        ? "1px solid rgba(245,158,11,0.25)"
-                        : "1px solid rgba(239,68,68,0.25)",
+                            border:
+                            forecastData.confidence === "High"
+                                ? "1px solid rgba(34,197,94,0.25)"
+                                : forecastData.confidence === "Medium"
+                                ? "1px solid rgba(245,158,11,0.25)"
+                                : "1px solid rgba(239,68,68,0.25)",
 
-                    color:
-                    confidence === "High"
-                        ? C.greenDark
-                        : confidence === "Medium"
-                        ? C.amber
-                        : C.red
-                }}
-                >
-                Confidence:{" "}{forecastData.confidence}
-            </div> */}
+                            color:
+                            forecastData.confidence === "High"
+                                ? C.greenDark
+                                : forecastData.confidence === "Medium"
+                                ? C.amber
+                                : C.red,
+                            borderRadius: 8,
+                            padding: "4px 12px",
+                            fontSize: 12,
+                            fontWeight: 600
+                        }}
+                        >
+                        Confidence:{" "}{forecastData.confidence}
+                    </div>
 
                 </div>
             </div>
@@ -331,10 +335,46 @@ export default function ForecastChart({
                             vertical={false}
                         />
 
-                        <XAxis
+                        {/* <XAxis
                             dataKey="day"
                             tick={{ fill: C.chartAxis, fontSize: 11 }}
                             tickLine={false}
+                        /> */}
+
+                        {/* without year dates */}
+                        {/* <XAxis
+                            dataKey="day"
+                            tick={{ fill: C.chartAxis, fontSize: 11 }}
+                            tickLine={false}
+                            tickFormatter={(value) => {
+                                const date = new Date(value);
+
+                                return date.toLocaleDateString("en-GB", {
+                                    day: "numeric",
+                                    month: "short"
+                                });
+                            }}
+                        /> */}
+
+                        {/* with year date */}
+                        <XAxis
+                            dataKey="day"
+                            tick={{
+                                fill: C.chartAxis,
+                                fontSize: 11
+                            }}
+                            tickLine={false}
+                            minTickGap={35}
+                            interval="preserveStartEnd"
+                            tickFormatter={(value) => {
+                                const date = new Date(value);
+
+                                return date.toLocaleDateString("en-GB", {
+                                    day: "numeric",
+                                    month: "short",
+                                    year: "2-digit"
+                                });
+                            }}
                         />
 
                         <YAxis

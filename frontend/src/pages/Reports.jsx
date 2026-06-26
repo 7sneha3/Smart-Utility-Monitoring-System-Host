@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Layout from "../components/Layout";
+import toast from "react-hot-toast";
 
 function StatBox({ title, value }) {
   return (<div className="bg-white/90 text-gray-900 p-6 rounded-lg shadow flex-1"> <div className="text-sm">{title}</div> <div className="text-2xl font-bold mt-2">
@@ -15,19 +16,42 @@ export default function Reports() {
   const [toDate, setToDate] = useState("");
   const [loading, setLoading] = useState(false);
   const [summary, setSummary] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const utilities = [
-  "all",
-  "Main Grid Supply",
-  "Backup Diesel Generator",
-  "Solar Panels",
-  "Municipal Water Supply",
-  "Groundwater Borewell",
-  "Process Cooling Water",
-  "Wastewater Discharge"
+  const ENERGY_UTILITIES = [
+      "all",
+      "Main Grid Supply",
+      "Backup Diesel Generator",
+      "Solar Panels"
   ];
 
+  const WATER_UTILITIES = [
+      "all",
+      "Municipal Water Supply",
+      "Groundwater Borewell",
+      "Process Cooling Water",
+      "Wastewater Discharge"
+  ];
+
+  const utilities =
+    resourceType === "energy"
+        ? ENERGY_UTILITIES
+        : resourceType === "water"
+        ? WATER_UTILITIES
+        : [
+            "all",
+            ...ENERGY_UTILITIES.slice(1),
+            ...WATER_UTILITIES.slice(1)
+        ];
+
   const fetchReport = async () => {
+    if (!fromDate || !toDate) {
+        toast.error(
+            "Please select both From Date and To Date."
+        );
+        return;
+    }
+
     try {
 
       setLoading(true);
@@ -53,7 +77,24 @@ export default function Reports() {
           }
         );
 
-      setSummary(data);
+        setSummary(data);
+
+        if (data.records === 0) {
+        
+            setErrorMessage(
+                "No records found for the selected date range."
+            );
+        
+            setTimeout(() => {
+        
+                setErrorMessage("");
+        
+            }, 4000);
+        
+        } else {
+        
+            setErrorMessage("");
+        }
 
     } catch (err) {
 
@@ -114,11 +155,12 @@ export default function Reports() {
           >
             <select
               value={resourceType}
-              onChange={(e) =>
+              onChange={(e) => {
                 setResourceType(
-                  e.target.value
-                )
-              }
+                    e.target.value
+                );
+                setSubUtility("all");
+            }}
               className="
               px-3
               py-2
@@ -250,28 +292,29 @@ export default function Reports() {
         </div>
 
         {
-          summary?.records === 0 && (
+            errorMessage && (
 
-            <div
-              className="
-              bg-red-500/20
-              border
-              border-red-400/40
-              text-red-200
-              rounded-xl
-              p-4
-              mb-6
-              "
-            >
+                <div
+                    className="
+                    bg-red-500/20
+                    border
+                    border-red-400/40
+                    text-red-200
+                    rounded-xl
+                    p-4
+                    mb-6
+                    "
+                >
 
-              ⚠ No records found for the selected date range.
+                    ⚠ {errorMessage}
 
-              <br />
+                    <br />
 
-              Please select another date range.
+                    Please select another date range.
 
-            </div>
-          )
+                </div>
+
+            )
         }
 
         {
@@ -409,7 +452,7 @@ export default function Reports() {
                     {
                       summary.threshold
                     }
-                    <strong>(Computed using all historical energy records)</strong>
+                    <strong>(Computed using {summary.resource_type} historical records)</strong>
                   </p>
                 </div>
               </div>

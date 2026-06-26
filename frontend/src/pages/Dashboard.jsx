@@ -260,9 +260,9 @@ function Navbar({ resourceType, setResourceType, selectedMonth, setSelectedMonth
           {loading ? "Loading…" : "Refresh Data"}
         </button>
         
-          <button onClick={downloadDashboardReport} className=" px-4 py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-900 text-white">
+          {/* <button onClick={downloadDashboardReport} className=" px-4 py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-900 text-white">
             📥 Export Report
-          </button>
+          </button> */}
       </div>
     </div>
   );
@@ -471,7 +471,8 @@ function ConsumptionGraph({ data, resourceType, selectedMonth, forecastDays, set
   if (selectedMonth === 0) {
 
     chartData = (data.days || []).map((date, i) => ({
-      displayLabel: date.slice(5),
+      // displayLabel: date.slice(5),
+      date,
       actual: data.actual?.[i] ?? null,
       // predicted: data.predictions?.[i] ?? null
     }));
@@ -488,7 +489,8 @@ function ConsumptionGraph({ data, resourceType, selectedMonth, forecastDays, set
         if (month !== monthStr) return null;
 
         return {
-          displayLabel: date.slice(5),
+          // displayLabel: date.slice(5), for short date 2jun
+          date, // for long date 1jun25
           actual: data.actual?.[i] ?? null,
           // predicted: data.predictions?.[i] ?? null
         };
@@ -576,10 +578,50 @@ function ConsumptionGraph({ data, resourceType, selectedMonth, forecastDays, set
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke={C.chartGrid} vertical={false} />
-            <XAxis dataKey="displayLabel" tick={{ fill: C.chartAxis, fontSize: 11 }}
+            {/* <XAxis dataKey="displayLabel" tick={{ fill: C.chartAxis, fontSize: 11 }}
               axisLine={{ stroke: C.chartGrid }} tickLine={false}
               tickFormatter={(v) => v}
-              minTickGap={25} interval="preserveStartEnd" />
+              minTickGap={25} interval="preserveStartEnd" /> */}
+              {/* <XAxis
+                dataKey="displayLabel"
+                tick={{ fill: C.chartAxis, fontSize: 11 }}
+                axisLine={{ stroke: C.chartGrid }}
+                tickLine={false}
+                tickFormatter={(value) => {
+                    const date = new Date(value);
+
+                    return date.toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short"
+                    });
+                }}
+                minTickGap={25}
+                interval="preserveStartEnd"
+            /> */}
+
+            {/* for full year date */}
+            <XAxis
+                dataKey="date"
+                tick={{
+                    fill: C.chartAxis,
+                    fontSize: 11
+                }}
+                axisLine={{
+                    stroke: C.chartGrid
+                }}
+                tickLine={false}
+                minTickGap={35}
+                interval="preserveStartEnd"
+                tickFormatter={(value) => {
+                    const date = new Date(value);
+
+                    return date.toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short",
+                        year: "2-digit"
+                    });
+                }}
+            />
             <YAxis tick={{ fill: C.chartAxis, fontSize: 11 }} axisLine={false}
               tickLine={false} tickFormatter={v => fmt(v, 0)} width={58} />
             <Tooltip content={<CustomTooltip />} />
@@ -632,14 +674,22 @@ function ThresholdGraph({ data, resourceType, selectedMonth, thresholdMode, setT
 
   console.log(data.anomalies);
 
-  const chartData = (data.days || [])
-    .map((date, i) => ({
-      date,
-      displayLabel: date.slice(5),
-      value: data.actual?.[i] ?? null,
-      threshold: activeThreshold,
-      isAnomaly: anomalyDates.has(date)
-    }))
+  // const chartData = (data.days || [])
+  //   .map((date, i) => ({
+  //     date,
+  //     displayLabel: date.slice(5),
+  //     value: data.actual?.[i] ?? null,
+  //     threshold: activeThreshold,
+  //     isAnomaly: anomalyDates.has(date)
+  //   }))
+
+  const chartData = (data.days || []).map((date, i) => ({
+    date: date,          // Full date (used for XAxis)
+    value: data.actual?.[i] ?? null,
+    threshold: activeThreshold,
+    isAnomaly: anomalyDates.has(date)
+}))
+    
     .filter(row => {
 
       if (selectedMonth === 0)
@@ -683,7 +733,7 @@ function ThresholdGraph({ data, resourceType, selectedMonth, thresholdMode, setT
   const AnomalyDot = ({ cx, cy, payload }) => {
     if (!payload?.isAnomaly || cx == null || cy == null) return null;
     return (
-      <circle cx={cx} cy={cy} r={6} fill={C.red} stroke="none" />
+      <circle cx={cx} cy={cy} r={8} fill={C.red} stroke="none" />
     );
   };
 
@@ -715,6 +765,7 @@ function ThresholdGraph({ data, resourceType, selectedMonth, thresholdMode, setT
   } else if (activeThreshold <= 0) {
     thresholdPct = 100;
   }
+  console.log("data dayssss: ",data.days);
 
   return (
     <Card style={{ padding: "22px 24px" }}>
@@ -755,9 +806,50 @@ function ThresholdGraph({ data, resourceType, selectedMonth, thresholdMode, setT
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartData} margin={{ top: 6, right: 14, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke={C.chartGrid} vertical={false} />
-            <XAxis dataKey="displayLabel" tick={{ fill: C.chartAxis, fontSize: 11 }}
+            
+            {/* <XAxis dataKey="displayLabel" tick={{ fill: C.chartAxis, fontSize: 11 }}
               axisLine={{ stroke: C.chartGrid }} tickLine={false}
-              tickFormatter={(v) => v} minTickGap={25} interval="preserveStartEnd" />
+              tickFormatter={(v) => v} minTickGap={25} interval="preserveStartEnd" /> */}
+              {/* <XAxis
+                dataKey="displayLabel"
+                tick={{ fill: C.chartAxis, fontSize: 11 }}
+                axisLine={{ stroke: C.chartGrid }}
+                tickLine={false}
+                tickFormatter={(value) => {
+                    const date = new Date(value);
+
+                    return date.toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short"
+                    });
+                }}
+                minTickGap={30}
+                interval="preserveStartEnd"
+            /> */}
+
+            {/* for full date with year */}
+            <XAxis
+              dataKey="date"
+              tick={{
+                  fill: C.chartAxis,
+                  fontSize: 11
+              }}
+              axisLine={{
+                  stroke: C.chartGrid
+              }}
+              tickLine={false}
+              minTickGap={35}
+              interval="preserveStartEnd"
+              tickFormatter={(value) => {
+                  const date = new Date(value);
+
+                  return date.toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "short",
+                      year: "2-digit"
+                  });
+              }}
+          />
             <YAxis tick={{ fill: C.chartAxis, fontSize: 11 }} axisLine={false}
               tickLine={false} tickFormatter={v => fmt(v, 0)}
               domain={[0, (v) => Math.max(v, activeThreshold || 0) * 1.1]} width={58} />

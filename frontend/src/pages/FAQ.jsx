@@ -34,10 +34,10 @@ export default function FAQ() {
       q: " Can I customize the threshold levels for different utilities?",
       a: "Yes, threshold values for energy and water consumption can be set and adjusted according to your facility’s operational goals or regulatory requirements.",
     },
-    {
-      q: "Is historical data and trend analysis available?",
-      a: "The system stores all uploaded data, generating historical graphs and reports so you can monitor trends, compare periods, and evaluate improvement over time.",
-    },
+    // {
+    //   q: "Is historical data and trend analysis available?",
+    //   a: "The system stores all uploaded data, generating historical graphs and reports so you can monitor trends, compare periods, and evaluate improvement over time.",
+    // },
     {
       q: "Can reports be exported for record-keeping or presentations?",
       a: "Yes summaries can be exported to common formats to facilitate reporting, compliance, or review",

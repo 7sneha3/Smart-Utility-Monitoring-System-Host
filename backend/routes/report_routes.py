@@ -19,6 +19,9 @@ def get_report_type(days):
     if days == 1:
         return "Daily"
 
+    elif days <= 7:
+        return "Weekly"
+    
     elif days <= 31:
         return "Monthly"
 
@@ -52,6 +55,15 @@ def report_summary():
     to_date = request.args.get(
         "to_date"
     )
+
+    if not from_date or not to_date:
+
+        return jsonify({
+
+            "error":
+            "Please select a valid date range."
+
+        }), 400
 
     print("FROM =", from_date)
     print("TO =", to_date)
@@ -142,19 +154,19 @@ def report_summary():
             "records": 0
         })
 
-    if not from_date:
+    # if not from_date:
 
-        from_date = min(
-            r["date"]
-            for r in records
-        )
+    #     from_date = min(
+    #         r["date"]
+    #         for r in records
+    #     )
 
-    if not to_date:
+    # if not to_date:
 
-        to_date = max(
-            r["date"]
-            for r in records
-        )
+    #     to_date = max(
+    #         r["date"]
+    #         for r in records
+    #     )
 
     days = (
         datetime.strptime(
@@ -231,6 +243,15 @@ def download_report():
     to_date = request.args.get(
         "to_date"
     )
+
+    if not from_date or not to_date:
+
+        return jsonify({
+
+            "error":
+            "Please select a valid date range."
+
+        }), 400
 
     query = {}
 
